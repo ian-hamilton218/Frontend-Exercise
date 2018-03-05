@@ -136,9 +136,9 @@ Install all require package
 ```bash
 $ npm install
 ```
-## Run Application with gulp
+## Run Application with gulp / npm start
 ```bash
-$ gulp
+$ gulp / npm start
 ```
 
 Note: Make sure when you do project npm install you are normal user not root user. Google Api user integration doesn't allow to use ip address. need to use Domain Name
