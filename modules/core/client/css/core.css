@@ -1,0 +1,160 @@
+.content {
+  margin-top: 50px;
+}
+.undecorated-link:hover {
+  text-decoration: none;
+}
+[ng\:cloak],
+[ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+  display: none !important;
+}
+.header-profile-image {
+  border-radius: 50%;
+  height: 28px;
+  margin-right: 5px;
+  opacity: 0.8;
+  width: 28px;
+}
+.open .header-profile-image,
+a:hover .header-profile-image {
+  opacity: 1;
+}
+.user-header-dropdown-toggle {
+  padding-bottom: 11px !important;
+  padding-top: 11px !important;
+}
+.user-primary-account {
+  font-size: 30px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.error-text {
+  display: none;
+}
+.has-error .help-block.error-text {
+  display: block;
+}
+.has-error .help-inline.error-text {
+  display: inline;
+}
+
+body {
+  background: #6C7988;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
+  font-size: 12px;
+}
+
+header {
+  background: #242D38;
+  line-height: 20px;
+  font-size: 12px;
+  font-family: "Open Sans";
+}
+
+md-nav-bar.md-default-theme, .md-nav-bar, md-nav-bar .md-nav-bar, md-toolbar {
+  min-height: unset;
+}
+
+md-nav-bar .md-nav-bar, md-toolbar._md-toolbar-transitions {
+  background: #242D38;
+}
+
+.md-button._md-nav-button,
+md-nav-bar.md-default-theme .md-button._md-nav-button.md-unselected,
+md-nav-bar .md-button._md-nav-button.md-unselected {
+  color: #A1A9B5;
+  font-family: "Open Sans";
+  line-height: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: default;
+  text-transform: capitalize;
+}
+
+.md-button{
+  min-width: unset;
+}
+
+.md-button._md-nav-button:hover,
+.md-button._md-nav-button:active,
+.md-button._md-nav-button:focus {
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: 600;
+  background: transparent;
+  text-transform: capitalize;
+  border: none;
+  line-height: 20px;
+}
+md-menu-bar button{
+  padding: 12px 16px;
+}
+md-menu-bar .md-menu button {
+  color: #A1A9B5;
+  font-family: "Open Sans";
+  line-height: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: default;
+  text-transform: lowercase;
+}
+
+md-menu-bar .md-menu button:hover,
+md-menu-bar .md-menu button:active,
+md-menu-bar .md-menu button:focus {
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: 600;
+  background: transparent;
+  text-transform: lowercase;
+  border: none;
+  line-height: 20px;
+}
+
+md-menu-bar.md-default-theme md-menu.md-open > button,
+md-menu-bar md-menu.md-open > button,
+md-menu-bar.md-default-theme md-menu > button:focus,
+md-menu-bar md-menu > button:focus,
+md-menu-bar .md-menu button:hover {
+  background: transparent;
+  color: #FFFFFF;
+}
+
+.md-open-menu-container.md-active{
+  background: inherit;
+}
+
+md-menu-content.md-menu-bar-menu.md-dense{
+  padding: 8px 8px;
+  border-radius: 3px;
+}
+.md-dense > .md-button:not(.md-dense-disabled),
+.md-dense :not(.md-dense-disabled) .md-button:not(.md-dense-disabled){
+  font-size: 13px;
+  font-weight: 600;
+  color: #6C7988;
+}
+.md-dense :not(.md-dense-disabled) .md-button:not(.md-dense-disabled):focus,
+.md-dense :not(.md-dense-disabled) .md-button:not(.md-dense-disabled):hover{
+  color: #242D38;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.logo {
+  height: 20px;
+  width: 20px;
+}
+
+.navbar-fixed-top{
+  z-index: unset;
+}

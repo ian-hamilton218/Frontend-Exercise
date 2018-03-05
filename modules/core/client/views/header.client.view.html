@@ -1,0 +1,36 @@
+<div ng-controller="HeaderController as vm" ng-cloak>
+  <md-content layout="row" layout-xs="column">
+    <md-nav-bar md-no-ink-bar="true" md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links" flex="80">
+      <md-nav-item md-nav-click="goto('view')" name="View">
+        <ng-md-icon class="logo" icon="now_widgets"  size="20" ng-show="!vm.isCollapsed"></ng-md-icon>
+      </md-nav-item>
+      <md-nav-item md-nav-click="goto('classes')" name="Classes">
+        Classes
+      </md-nav-item>
+      <md-nav-item md-nav-click="goto('lessons')" name="Lessons">
+        Lessons
+      </md-nav-item>
+      <md-nav-item md-nav-click="goto('libraries')" name="Libraries">
+        Libraries
+      </md-nav-item>
+    </md-nav-bar>
+    <md-toolbar class="md-menu-toolbar" flex="20">
+      <div>
+        <md-menu-bar layout-align="end right">
+          <md-menu layout-align="end right">
+            <button class="text-right" aria-label="Open menu" ng-click="$mdMenu.open($event); vm.isCollapsed = !vm.isCollapsed" >
+              <span ng-bind="vm.currentUser"></span>
+              <ng-md-icon icon="expand_more"  size="18" ng-show="!vm.isCollapsed"></ng-md-icon>
+              <ng-md-icon icon="expand_less"  size="18" ng-show="vm.isCollapsed"></ng-md-icon>
+            </button>
+            <md-menu-content width="2" md-position-mode="target-right target" ng-mouseleave="$mdMenu.close(); vm.isCollapsed = !vm.isCollapsed">
+              <md-menu-item ng-repeat="menu in vm.userMenu">
+                <md-button ng-click="vm.onClick(menu.type, menu.displayLabel)">{{ menu.displayLabel }}</md-button>
+              </md-menu-item>
+            </md-menu-content>
+          </md-menu>
+        </md-menu-bar>
+      </div>
+    </md-toolbar>
+  </md-content>
+</div>

@@ -39,3 +39,106 @@ Extra special bonus points if you show us a way to take an AngularJS 1.x app and
 ### How to send it to us:
 
 Please fork this repository or create your own git repository and provide us access to clone it when you are finished, with instructions to build and run the application.
+
+
+## Prerequisites
+Make sure you have installed all of the following prerequisites on your development machine:
+* Git - [Download & Install Git](https://git-scm.com/downloads). OSX and Linux machines typically have this already installed.
+* Node.js - [Download & Install Node.js](https://nodejs.org/en/download/) and the npm package manager. If you encounter any problems, you can also use this [GitHub Gist](https://gist.github.com/isaacs/579814) to install Node.js.
+* MongoDB - [Download & Install MongoDB](http://www.mongodb.org/downloads), and make sure it's running on the default port (27017).
+* Bower - You're going to use the [Bower Package Manager](http://bower.io/) to manage your front-end packages. Make sure you've installed Node.js and npm first, then install bower globally using npm:
+
+### To Install Git
+```bash
+sudo apt-get update
+sudo apt-get install git
+```
+
+### To Install Node.js on Ubuntu
+
+```bash
+$ cd ~
+$ curl -sL https://deb.nodesource.com/setup_8.x -o nodesource_setup.sh
+```
+
+Run the script under sudo:
+```bash
+$ sudo bash nodesource_setup.sh
+```
+
+Install Node.js
+```bash
+$ sudo apt-get install nodejs
+$ sudo apt-get install build-essential
+```
+Note: npm package come with Node.js
+
+Check if nodejs and npm install
+```bash
+$ node -v
+$ npm -v
+```
+Install MongoDB Step
+Verify GPG Key
+```bash
+$ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EA312927
+```
+
+Create list file for MongoDB
+``bash
+$ echo "deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.2.list
+```
+
+Update the packages list
+```bash
+$ sudo apt-get update
+```
+Install Mongodb package
+```bash
+$ sudo apt-get install -y mongodb-org
+```
+Start Mongodb
+```bash
+$ sudo systemctl start mongod
+```
+
+Check service status
+```bash
+$ sudo systemctl status mongod
+```
+Enable automatic start
+```bash
+$ sudo systemctl enable mongod
+```
+
+Enable port 27017 and 3000
+```bash
+$ sudo ufw allow 27017
+$ sudo ufw allow 3000
+```
+
+## Downloading MEAN.JS
+```bash
+$ git clone https://github.com/meanjs/mean.git meanjs
+```
+
+```bash
+$ npm install -g bower
+```
+
+* Gulp - Gulp is used to build the project and automate project tasks.
+
+```bash
+$ npm install gulp -g
+```
+
+Install all require package
+```bash
+$ npm install
+```
+## Run Application with gulp
+```bash
+$ gulp
+```
+
+Note: Make sure when you do project npm install you are normal user not root user. Google Api user integration doesn't allow to use ip address. need to use Domain Name
